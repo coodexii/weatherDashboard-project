@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">
+                    <i class="fas fa-cloud-sun"></i> Weather Dashboard
+                </h1>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search for a city..."
+                    autocomplete="off"
+                >
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <ul class="suggestions-list" id="suggestionsList"></ul>
+            </div>
+            <div class="current-location">
+                <button class="location-btn" id="locationBtn">
+                    <i class="fas fa-map-marker-alt"></i> Use Current Location
+                </button>
+            </div>
+        </section>
+
+        <!-- Main Weather Section -->
+        <section class="main-weather">
+            <div class="current-weather" id="currentWeather">
+                <!-- Current weather will be populated here -->
+                <div class="loading">
+                    <i class="fas fa-spinner fa-spin"></i> Loading weather data...
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <!-- Additional weather details -->
+                <div class="weather-details" id="weatherDetails">
+                    <!-- Details will be populated here -->
+                </div>
+            </aside>
+        </section>
+
+        <!-- Forecast Section -->
+        <section class="forecast-section">
+            <h2 class="section-title">5-Day Forecast</h2>
+            <div class="forecast-container" id="forecastContainer">
+                <!-- Forecast cards will be populated here -->
+            </div>
+        </section>
+
+        <!-- Hourly Forecast Section -->
+        <section class="hourly-section">
+            <h2 class="section-title">Hourly Forecast</h2>
+            <div class="hourly-container" id="hourlyContainer">
+                <!-- Hourly forecast will be populated here -->
+            </div>
+        </section>
+
+        <!-- Error Message -->
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
