@@ -160,6 +160,7 @@ Free to use and modify for personal and commercial projects.
 For issues or suggestions, please feel free to modify the code and customize it to your needs!
 
 ---
-##Live Demo
+##Live Demo 
+https://coodexii.github.io/weatherDashboard-project/
 
 **Enjoy your Weather Dashboard! 🌤️**
